@@ -5,12 +5,11 @@ let stopElem = document.querySelector('.fa-stop-circle')
 let currentTime = document.querySelector('.currentTime')
 let backward = document.querySelector('.fa-step-backward')
 let forward = document.querySelector('.fa-step-forward')
+
 let musicLists = [
     'assets/music/1.mp3',
     'assets/music/2.mp3',
 ]
-
-audioElem.currentTime=180
 
 function currentTimes(){
     let standardTime = Math.floor(audioElem.currentTime)
