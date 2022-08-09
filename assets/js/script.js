@@ -36,8 +36,6 @@ function currentTimes(){
 }
 setInterval(currentTimes,1000)
 
-
-
 function playMusic(){
     audioElem.play()
     playElem.style.display="none"
