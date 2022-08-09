@@ -10,6 +10,8 @@ let musicLists = [
     'assets/music/2.mp3',
 ]
 
+audioElem.currentTime=180
+
 function currentTimes(){
     let standardTime = Math.floor(audioElem.currentTime)
     if(Math.floor(audioElem.currentTime)<10){
@@ -35,8 +37,15 @@ function currentTimes(){
         }
     }
     currentTime.innerHTML = standardTime 
+
+    if(audioElem.currentTime===audioElem.duration){
+        pauseElem.style.display="none"
+        playElem.style.display="block"
+    }
 }
 setInterval(currentTimes,1000)
+
+
 
 function playMusic(){
     audioElem.play()
