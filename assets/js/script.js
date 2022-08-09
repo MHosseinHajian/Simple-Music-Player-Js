@@ -28,14 +28,6 @@ function currentTimes(){
             standardTime = "0"+Math.floor(audioElem.currentTime/60) + ":" + Math.floor(audioElem.currentTime%60)
         }
     }
-    if(Math.floor(audioElem.currentTime)>=60){
-        if(Math.floor(audioElem.currentTime%60)<10){
-            standardTime = "0"+Math.floor(audioElem.currentTime/60) + ":" + "0" +Math.floor(audioElem.currentTime%60)
-        }
-        else{
-            standardTime = "0"+Math.floor(audioElem.currentTime/60) + ":" + Math.floor(audioElem.currentTime%60)
-        }
-    }
     currentTime.innerHTML = standardTime 
 
     if(audioElem.currentTime===audioElem.duration){
